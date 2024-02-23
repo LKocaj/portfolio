@@ -94,7 +94,7 @@ body.dark-theme{
     }
 }
 
-/*==================== BASE ====================*/
+/*==================== base ====================*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -128,7 +128,7 @@ img{
     height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/*---- modular css ----*/
 .section{
     padding: 2rem 0 4rem;
 
@@ -148,7 +148,7 @@ img{
     }
 }
 
-/*==================== LAYOUT ====================*/
+/*---- layout -----*/
 .container{
     max-width: 768px;
     margin-left: var(--mb-1-5);
@@ -169,7 +169,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/*---- nav ----*/
 .nav{
     max-width: 968px;
     height: var(--header-height);
@@ -332,7 +332,7 @@ img{
     }
 }
 
-/*========== BUTTONS ==========*/
+/*---- buttons ----*/
 .button{
     display: inline-block;
     background-color: var(--first-color);
@@ -377,7 +377,7 @@ img{
     }
 }
 
-/*==================== ABOUT ====================*/
+/*---- about ----*/
 .about{
     &__img{
         width: 200px;
@@ -414,7 +414,7 @@ img{
     }
 }
 
-/*==================== SKILLS ====================*/
+/*---- skills ----*/
 .skills{
     &__container{
         row-gap: 0;
@@ -516,7 +516,7 @@ img{
     }
 }
 
-/*==================== QUALIFICATION ====================*/
+/*---- qualifications ----*/
 .qualification{
     &__tabs{
         display: flex;
@@ -579,7 +579,7 @@ img{
     }
 }
 
-/*==================== SERVICES ====================*/
+/*---- services ----*/
 .services{
     &__container{
         gap: 1.5rem;
@@ -673,7 +673,7 @@ img{
     visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+/*---- PORTFOLIO ----*/
 .portfolio{
     &__container{
         overflow: initial;
@@ -726,7 +726,7 @@ img{
     outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
+/*---- project inquiry ----*/
 .project{
     text-align: center;
 
@@ -752,43 +752,7 @@ img{
     }
 }
 
-/*==================== TESTIMONIAL ====================*/
-.testimonial{
-    
-    &__data,
-    &__header{
-        display: flex;
-    }
-    &__data{
-        justify-content: space-between;
-        margin-bottom: var(--mb-1);
-    }
-    &__img{
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        margin-right: var(--mb-0-75);
-    }
-    &__name{
-        font-size: var(--h3-font-size);
-        font-weight: var(--font-medium);
-    }
-    &__client{
-        font-size: var(--small-font-size);
-        color: var(--text-color-light);
-    }
-    &__description{
-        margin-bottom: var(--mb-2-5);
-    }
-    &__icon-star{
-        color: var(--first-color);
-    }
-}
-.swiper-container .swiper-pagination-testimonial{
-    bottom: 0;
-}
-
-/*==================== CONTACT ME ====================*/
+/*---- Reach out ----*/
 .contact{
     &__container{
         row-gap: 3rem;
@@ -831,7 +795,7 @@ img{
     }
 }
 
-/*==================== FOOTER ====================*/
+/*---- footer ----*/
 .footer{
     padding-top: 2rem;
     
@@ -880,7 +844,7 @@ img{
     }
 }
 
-/*========== SCROLL UP ==========*/
+/*---- scroll ----*/
 .scrollup{
     position: fixed;
     right: 1rem;
@@ -907,7 +871,7 @@ img{
     bottom: 5rem;
 }
 
-/*========== SCROLL BAR ==========*/
+/*---- scroll bar ----*/
 ::-webkit-scrollbar{
     width: .60rem;
     border-radius: .5rem;
@@ -923,8 +887,8 @@ img{
     background-color: var(--text-color-light);
 }
 
-/*==================== MEDIA QUERIES ====================*/
-/* For small devices */
+/*---- media queries ----*/
+/*  small devices */
 @media screen and(max-width: 350px){
     .container{
         margin-left: var(--mb-1);
@@ -991,7 +955,7 @@ img{
     }
 }
 
-/* For medium devices */
+/* medium devices */
 @media screen and(min-width: 568px){
     .home{
         &__content{
@@ -1188,7 +1152,7 @@ img{
 
 }
 
-/* For large devices */
+/* large devices */
 @media screen and(min-width: 1024px){
     .header,
     .main,
