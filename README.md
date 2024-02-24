@@ -1,5 +1,5 @@
 # My Portfolio
-
+git@github.com:LKocaj/portfolio.git
 My homepage created using only fundamentals of Front-End, HTML, CSS, Js.
 
 ## Description
