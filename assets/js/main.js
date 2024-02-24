@@ -1,10 +1,10 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*---- menu show/hidden ----*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
 
-/*===== MENU SHOW =====*/
+/*---- menu show ----*/
 /* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener('click', () =>{
@@ -12,7 +12,7 @@ if(navToggle){
     })
 }
 
-/*===== MENU HIDDEN =====*/
+/*---- menu hidden ----*/
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () =>{
@@ -20,7 +20,7 @@ if(navClose){
     })
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*---- remove menu mobile ----*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
@@ -30,7 +30,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
+/*---- accordian (skills) ----*/
 const skillsContent = document.getElementsByClassName('skills__content'),
       skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -49,7 +49,7 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click', toggleSkills)
 })
 
-/*==================== QUALIFICATION TABS ====================*/
+/*---- qualificaion tabs ----*/
 const tabs = document.querySelectorAll('[data-target]'),
 tabContents = document.querySelectorAll('[data-content]')
 
@@ -69,7 +69,7 @@ tabs.forEach(tab => {
     })
 })
 
-/*==================== SERVICES MODAL ====================*/
+/*---- services modal ----*/
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('.services__button'),
       modalCloses = document.querySelectorAll('.services__modal-close')
@@ -92,7 +92,7 @@ modalCloses.forEach((modalClose) => {
     })
 })
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*---- portfolio swiper  ----*/
 let swiperPortfolio = new Swiper('.portfolio__container', {
     cssMode: true,
     loop: true,
@@ -107,26 +107,7 @@ let swiperPortfolio = new Swiper('.portfolio__container', {
     },
 })
 
-/*==================== TESTIMONIAL ====================*/
-let swiperTestimonial = new Swiper('.testimonial__container', {
-    loop: true,
-    grabCursor: true,
-    spaceBetween: 48,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-    },
-    breakpoints: {
-        568: {
-            slidesPerView: 2,
-        },
-    }
-})
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*---- scroll sections active link ----*/
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -146,14 +127,14 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*---- change background header ----*/ 
 function scrollHeader(){
     const nav = document.getElementById('header');
     if(this.scrollY >= 80) nav.classList.add('scroll-header'); else nav.classList.remove('scroll-header');
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SHOW SCROLL TOP ====================*/ 
+/*---- show scroll top ----*/ 
 function scrollTop(){
     let scrollTop = document.getElementById('scroll-top');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -161,7 +142,7 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*---- dark and alight theme ----*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'uil-sun'
